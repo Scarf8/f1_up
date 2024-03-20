@@ -179,6 +179,4 @@ function reset() {
     pilot3.style.margin = "0px 0px 0px 0px";
     pilot4.style.margin = "0px 0px 0px 0px";
     pilot5.style.margin = "0px 0px 0px 0px";
-
-    location.reload();
 };
