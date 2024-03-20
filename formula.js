@@ -87,7 +87,13 @@ function start(){
                 cash = cash + (betValue*2);
                 alert("Seu piloto 1 ganhou, você agora tem:" + cash);
             } else {
-                alert("Perdeu :(");
+                alert("Perdeu!");
+            } if (cash <= 0) {
+
+                alert("Você perdeu, tente de novo.")
+        
+                location.reload();
+                
             }
             clearInterval(intervalId);
             input.disabled = false;
@@ -97,7 +103,13 @@ function start(){
                 cash = cash + (betValue*2);
                 alert("Seu piloto 2 ganhou, você agora tem:" + cash);
             } else {
-                alert("Perdeu :(");
+                alert("Perdeu!");
+                
+            } if (cash <= 0) {
+
+                alert("Você perdeu, tente de novo.")
+        
+                location.reload();
             }
             clearInterval(intervalId);
             input.disabled = false;
@@ -107,11 +119,13 @@ function start(){
                 cash = cash + (betValue*2);
                 alert("Seu piloto 3 ganhou, você agora tem:" + cash);
             } else {
-                alert("Perdeu :(");
-            }
-            if (cash == 0) {
-                alert("Game over!")
-                window.reset()
+                alert("Perdeu!");
+               
+            } if (cash <= 0) {
+
+                alert("Você perdeu, tente de novo.")
+        
+                location.reload();
             }
             clearInterval(intervalId);
             input.disabled = false;
@@ -121,7 +135,13 @@ function start(){
                 cash = cash + (betValue*2);
                 alert("Seu piloto 4 ganhou, você agora tem:" + cash);
             } else {
-                alert("Perdeu :(");
+                alert("Perdeu!");
+                
+            } if (cash <= 0) {
+
+                alert("Você perdeu, tente de novo.")
+        
+                location.reload();
             }
             clearInterval(intervalId);
             input.disabled = false;
@@ -131,7 +151,13 @@ function start(){
                 cash = cash + (betValue*2);
                 alert("Seu piloto 5 ganhou, você agora tem:" + cash);
             } else {
-                alert("Perdeu :(");
+                alert("Perdeu!");
+                
+            } if (cash <= 0) {
+
+                alert("Você perdeu, tente de novo.")
+        
+                location.reload();
             }
             clearInterval(intervalId);
             input.disabled = false;
@@ -153,4 +179,6 @@ function reset() {
     pilot3.style.margin = "0px 0px 0px 0px";
     pilot4.style.margin = "0px 0px 0px 0px";
     pilot5.style.margin = "0px 0px 0px 0px";
+
+    location.reload();
 };
