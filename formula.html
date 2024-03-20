@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formula 1 - UP</title>
+        <link rel="stylesheet" href="formula.css">
+        <script src="formula.js"></script>
+    </head>
+    <body>
+        <div id="map" class="map">
+            <div id="column" class="column">
+
+                <div id="pilot1" class="pilot1"></div><br>
+                <div id="pilot2" class="pilot2"></div><br>
+                <div id="pilot3" class="pilot3"></div><br>
+                <div id="pilot4" class="pilot4"></div><br>
+                <div id="pilot5" class="pilot5"></div><br>
+
+                <label for="bet">Faça sua aposta</label><br><br>
+                <input type="number" name="bet" id="bet" value = "0" min="5" step="5" onchange="cashref()"></input><br><br>
+
+                <div>Saldo:</div><br>
+                <div id="budget"></div><br>
+
+                <div>Valor da aposta:</div><br>
+                <div id="divPot"></div><br>
+
+                <div class="pilotbet">
+
+                    <button onclick="choosed('pilot1')">Black Pilot</button>
+                    <button onclick="choosed('pilot2')">Red Pilot</button>
+                    <button onclick="choosed('pilot3')">Orange Pilot</button>
+                    <button onclick="choosed('pilot4')">Purple Pilot</button>
+                    <button onclick="choosed('pilot5')">Blue Pilot</button>
+
+                </div><br>
+
+
+            </div>
+            <div class="finish"></div>
+        </div>
+
+        <button class="run" onclick="start()">Correr!</button>
+        <button class="try" onclick="reset()">Tentar de novo</button>
+
+    </body>
+</html>

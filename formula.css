@@ -1,0 +1,54 @@
+.map {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    flex-direction: column;
+    width: 100%;
+}
+
+.pilot1 {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+}
+
+.pilot2 {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+}
+
+.pilot3 {
+    width: 100px;
+    height: 50px;
+    background-color: orange;
+}
+
+.pilot4 {
+    width: 100px;
+    height: 50px;
+    background-color: purple;
+}
+
+.pilot5 {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+}   
+
+.finish {
+    width: 30px;    
+    height: 350px; 
+    background-color: black; 
+    display: flex;
+    margin-right: 50px;
+}
+
+.pilotbet {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    
+}
