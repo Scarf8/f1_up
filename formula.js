@@ -2,11 +2,11 @@ let cash = 100,
     car,
     carBetted;
 
-function onload () {
-    let divCash = document.getElementById("cash");
+window.addEventListener("load", () => {
+    const divCash = document.getElementById("budget");
     
     divCash.innerHTML = cash;
-}
+  });
 
 function cashref(){
     const inputBet = document.getElementById("bet")
@@ -35,6 +35,11 @@ function choosed(pilot){
 }
 
 function start(){
+
+    if (!carBetted) {
+        alert("Não se esqueça de apostar em um carro para ganhar!")
+        return;
+    }
 
     let input = document.getElementById("bet");
 
@@ -165,6 +170,7 @@ function start(){
     }
 
     intervalId = setInterval(avancar, 50);
+      
 };
 
 function reset() {
